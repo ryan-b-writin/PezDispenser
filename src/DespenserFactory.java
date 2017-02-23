@@ -7,6 +7,8 @@ public class DespenserFactory {
 		System.out.printf("Maximum pez capacity: %d %n", PezDispenser.MAX_PEZ);
 		PezDispenser dispenser = new PezDispenser("Chewbacca");
 		System.out.printf("The head piece looks like %s. %n",dispenser.getCharacterName());
+		System.out.println("Filling with candy...");
+		dispenser.fill();
 	}
 	
 	
