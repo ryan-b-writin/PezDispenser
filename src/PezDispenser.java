@@ -1,7 +1,8 @@
 
 public class PezDispenser {
 
-	private String characterName;
+	public static final int MAX_PEZ = 12;
+	final private String characterName;
 	
 	public PezDispenser(String characterName) {
 		this.characterName = characterName;
