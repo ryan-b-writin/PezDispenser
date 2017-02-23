@@ -1,9 +1,14 @@
 
 public class PezDispenser {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Assembling New Pez Dispenser");
+	private String characterName;
+	
+	public PezDispenser(String characterName) {
+		this.characterName = characterName;
+	}
+	
+	public String getCharacterName() {
+		return characterName;
 	}
 
 }
