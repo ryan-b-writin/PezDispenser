@@ -28,6 +28,14 @@ public class DespenserFactory {
 		while (dispenser.dispense()){
 			System.out.println("Eating single pez...");
 		}
+		System.out.println("MORE!");
+		try {
+			dispenser.fill(900);
+			System.out.println("this line will not be printed.");
+		} catch (IllegalArgumentException iae) {
+			System.out.println("PEZ ERROR");
+			System.out.printf("Error message: %s", iae.getMessage());
+		}
 		
 	}
 	
