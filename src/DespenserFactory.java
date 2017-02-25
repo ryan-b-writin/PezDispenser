@@ -17,6 +17,12 @@ public class DespenserFactory {
 		if (!dispenser.isEmpty()){
 			System.out.println("Dispenser filled.");
 		}
+		while (dispenser.dispense()){
+			System.out.println("Eating single pez...");
+		}
+		if (dispenser.isEmpty()){
+			System.out.println("ALL PEZ HAVE BEEN CONSUMED.");
+		}
 	}
 	
 	
