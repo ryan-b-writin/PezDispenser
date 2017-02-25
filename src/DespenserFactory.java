@@ -23,6 +23,12 @@ public class DespenserFactory {
 		if (dispenser.isEmpty()){
 			System.out.println("ALL PEZ HAVE BEEN CONSUMED.");
 		}
+		System.out.println("MORE PLEASE.");
+		dispenser.fill(3);
+		while (dispenser.dispense()){
+			System.out.println("Eating single pez...");
+		}
+		
 	}
 	
 	

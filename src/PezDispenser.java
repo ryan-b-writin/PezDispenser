@@ -14,6 +14,10 @@ public class PezDispenser {
 		pezCount = MAX_PEZ;
 	}
 	
+	public void fill(int pezAmt){
+		pezCount += pezAmt;
+	}
+	
 	public boolean isEmpty() {
 		return pezCount == 0;
 	}
